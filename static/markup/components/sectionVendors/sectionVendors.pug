@@ -1,0 +1,9 @@
+include ../figureVendor/figureVendor
+
+mixin sectionVendors(data)
+	section.section.section-vendors#section-vendors
+		.container
+			.row
+				each item in data.items
+					.col-lg-6.col-12.section-vendors__item
+						+figureVendor(item)

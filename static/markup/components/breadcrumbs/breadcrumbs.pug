@@ -1,0 +1,8 @@
+mixin breadcrumbs(data)
+    ul.breadcrumbs
+        each item in data
+            li
+                if (item.href)
+                    a(href=item.href)=item.title
+                else
+                    =item.title

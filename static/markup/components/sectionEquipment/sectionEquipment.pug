@@ -1,0 +1,7 @@
+include ../figureEquipment/figureEquipment
+
+mixin sectionEquipment(data)
+	section.section.section-equipment#section-equipment
+		each item, index in data.items
+			- index == index++;
+			+figureEquipment(item, index)

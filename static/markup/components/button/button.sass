@@ -1,0 +1,23 @@
+// ==========================================================================
+// button
+// ==========================================================================
+.button
+  position: relative
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  background-color: $pinkish-tan
+  cursor: pointer
+  border: none
+  border-radius: 2px
+  padding: 15px 36px
+  +small-caps
+  color: #fff
+  +trans1
+  &:hover
+    background-color: $pinkish-tan-dark
+    color: #fff
+
+@media screen and (max-width: 1199.8px)
+  .button
+    padding: 12px 32px

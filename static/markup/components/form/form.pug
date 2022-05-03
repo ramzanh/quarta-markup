@@ -1,0 +1,24 @@
+mixin formCallback(data)
+	form.container.form.text-left(action="" method="POST")
+		// request callback
+		.d-block.js-form-call-request
+			.row
+				.col-sm-6
+					.form-group
+						label(for="visitor-name") Ваше имя *
+						input.form-control(type="text" id="visitor-name" required)
+				.col-sm-6
+					.form-group
+						label(for="visitor-name") Ваш телефон *
+						input.form-control.js-mask-phone(type="tel" id="visitor-name" required)
+			.row.mt-4
+				.col
+					button.w-100.button Перезвоните мне
+		// request callback success
+		.d-none.text-center.js-form-call-success
+			.row
+				.col
+					p Ваш запрос принят! Менеджер свяжется с вами в ближайшее время.
+			.row
+				.col
+					a.dotted(href='#' data-dismiss='modal') Закрыть окно

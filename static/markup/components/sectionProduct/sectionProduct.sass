@@ -1,0 +1,125 @@
+// ==========================================================================
+// sectionProduct
+// ==========================================================================
+.section-product
+    padding-top: 80px
+    padding-bottom: 80px
+    h3
+        margin-bottom: 16px
+.section-product__slider-thumbnails
+    margin-top: 20px
+.section-product__specification
+    margin-top: 30px
+.section-product__buttons
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: space-between
+    margin-top: 42px
+    .button
+        width: 100%
+        max-width: 340px
+.section-product__slider-images
+    .swiper-slide
+        iframe
+            width: 535px
+            height: 535px
+        img
+            width: 100%
+            height: auto
+.section-product__slider-thumbnails
+    .swiper-slide
+        border: 4px solid transparent
+        +trans1
+        opacity: .6
+        cursor: pointer
+    .swiper-slide-active
+        border-color: $pinkish-tan
+        opacity: 1
+    .overlay
+        opacity: .8
+.section-product__video
+    width: 100%
+    height: 100%
+.section-product__icon-video
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: $pinkish-tan
+    font-size: 48px !important
+    z-index: 50
+.section-product__item
+    position: relative
+    cursor: pointer
+    .overlay
+        opacity: 0
+        visibility: hidden
+        +trans1
+    &:hover
+        .overlay
+            opacity: .8
+            visibility: visible
+        .section-product__icon-zoom
+            opacity: 1
+            visibility: visible
+            transform: translate(-50%, -50%)
+.section-product__icon-zoom
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -30%)
+    font-size: 48px !important
+    +trans1
+    opacity: 0
+    visibility: hidden
+    color: #fff
+    z-index: 50
+
+@media screen and (max-width: 1199.8px)
+    .section-product__slider-images
+        .swiper-slide
+            iframe
+                width: 450px
+                height: 450px
+    .section-product__buttons
+        .button
+            max-width: 50%
+    .section-product__col
+        padding: 15px
+
+@media screen and (max-width: 991.8px)
+    .section-product__slider-images
+        .swiper-slide
+            iframe
+                width: 100%
+                height: auto
+                min-height: 450px
+    .section-product
+        padding-top: 50px
+        padding-bottom: 50px
+    .section-product__icon-video
+        font-size: 36px !important
+
+@media screen and (max-width: 767.8px)
+    .section-product__buttons
+        flex-direction: column
+        .button
+            margin-bottom: 15px
+            max-width: 100%
+            width: 100%
+    .section-product__slider-images
+        .swiper-slide
+            iframe
+                min-height: 240px
+
+.lg-download
+    border: none
+.lg-outer .lg-item
+    background: url('%=static=%plugins/loading.gif') no-repeat scroll center center transparent
+
+@media screen and (max-width: 575.8px)
+    .section-product
+        padding-top: 0
+        padding-bottom: 40px

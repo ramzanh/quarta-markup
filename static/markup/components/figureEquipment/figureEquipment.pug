@@ -1,0 +1,12 @@
+mixin figureEquipment(data, index)
+	.row.no-gutters.figure-equipment(class= data.reverse ? 'flex-xl-row-reverse' : '')
+		.col-xl-6.figure-equipment__description
+			.figure-equipment__counter='0' + index
+			.figure-equipment__content
+				h3
+					a(href=data.href)=data.title
+				p!=data.description
+			.figure-equipment__line
+		a.col-xl-6.figure-equipment__image(href=data.href)
+			+imgSet(data.img, 'jpg', '3x')
+			.figure-equipment__pointer

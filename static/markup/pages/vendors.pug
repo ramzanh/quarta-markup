@@ -1,0 +1,18 @@
+extends _template.pug
+
+include ../components/sectionMasthead/sectionMasthead
+include ../components/sectionVendors/sectionVendors
+
+block pageHeader
+	+header(header.defaults)
+block pageMain
+	main.page-main
+		// section MASTHEAD 
+		+sectionMasthead(sectionMasthead.vendors)
+		// - section MASTHEAD 
+		// section VENDORS 
+		+sectionVendors(sectionVendors.defaults)
+		// - section VENDORS 
+block pageFooter
+	+footer(footer.defaults)
+block pageScripts

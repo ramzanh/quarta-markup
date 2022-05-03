@@ -1,0 +1,20 @@
+mixin icon(the_icon)
+	!= pugHelpers.Icon.call(locals, {iconName: the_icon})
+mixin imgSet(img, extension, density)
+	- var set;
+	case density
+		when '1x'
+			- set = img + '.' + extension + ' 1x,';
+		when '2x'
+			- set = img + '.' + extension + ' 1x,' + img + '@2x.' + extension + ' 2x,';
+		when '3x'
+			- set = img + '.' + extension + ' 1x,' + img + '@2x.' + extension + ' 2x,' + img + '@3x.' + extension + ' 3x';
+	img(src=img + '.' + extension srcset=set alt='')
+include ../components/head/head
+include ../components/header/header
+include ../components/footer/footer
+include ../components/modal/modal
+include ../components/button/button
+include ../components/link/link
+include ../components/section/section
+include ../components/form/form

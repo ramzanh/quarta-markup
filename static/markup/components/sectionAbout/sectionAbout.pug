@@ -1,0 +1,15 @@
+include ../figureAbout/figureAbout
+
+mixin sectionAbout(data)
+	section.section.section-about#section-about-1
+		.section-about__background(style="background-image: url('" + data.background + "');")
+		.container
+			.section-about__item
+				+figureAbout(data.items[0])
+			.section-about__item
+				+figureAbout(data.items[1])
+
+mixin sectionAbout2(data)
+	section.section.section-about.section_bg-sign.section_bg-sign_white#section-about-2
+		.container-fluid
+			+figureAbout(data.items[2])(class="no-gutters")

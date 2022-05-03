@@ -1,0 +1,9 @@
+include ../breadcrumbs/breadcrumbs
+
+mixin sectionMasthead(data)
+	section.section.section_bg-dark.section_bg-sign.section-masthead#section-masthead
+		.container
+			.row
+				.col
+					h1=data.heading
+					+breadcrumbs(data.breadcrumbs)

@@ -1,0 +1,25 @@
+// ==========================================================================
+// link
+// ==========================================================================
+.link-icon
+    display: inline-flex
+    align-items: center
+    color: inherit
+    border: none
+    color: $pinkish-tan
+    fill: $pinkish-tan
+    transition: none
+    svg
+        // display: block
+        margin-right: 10px
+        +trans1
+    &:hover
+        fill: $pinkish-tan-dark
+        .link-icon__text
+            color: $pinkish-tan-dark
+            border-color: $pinkish-tan-dark
+.link-icon__text
+    // display: inline-block
+    line-height: 1.2
+    border-bottom: 1px solid rgba(216, 160, 114, .5)
+    +trans1

@@ -1,0 +1,51 @@
+// ==========================================================================
+// section
+// ==========================================================================
+.section
+    position: relative
+    z-index: 50
+.section_pt
+    padding-top: 120px
+.section_pb
+    padding-bottom: 120px
+.section_bg-dark
+    background-color: $slate
+    color: #fff
+.section_bg-sign
+    background-image: url('%=static=%content/sign.svg')
+    background-repeat: no-repeat
+    background-position: center center
+    background-attachment: fixed
+.section_bg-sign_white
+    background-image: url('%=static=%content/sign-white.svg')
+
+.section__header
+    margin-bottom: 50px
+    h2
+        margin-top: 0
+        margin-bottom: 8px
+
+@media screen and (max-width: 1199.8px)
+    .section_pt
+        padding-top: 80px
+    .section_pb
+        padding-bottom: 80px
+    .section__header
+        margin-bottom: 30px
+
+@media screen and (max-width: 991.8px)
+    .section_pt
+        padding-top: 60px
+    .section_pb
+        padding-bottom: 60px
+    .section__header
+        h2
+            margin-bottom: 4px
+
+@media screen and (max-width: 575.8px)
+    .section_pt
+        padding-top: 50px
+    .section_pb
+        padding-bottom: 50px
+    .section__header
+        margin-bottom: 20px

@@ -1,0 +1,7 @@
+mixin figureVendor(data)
+	.figure-vendor
+		.figure-vendor__logo
+			+imgSet(data.img, 'png', '3x')
+		.figure-vendor__description
+			h3=data.heading
+			p=data.description

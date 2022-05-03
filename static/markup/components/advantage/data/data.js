@@ -1,0 +1,7 @@
+data = {
+	advantage: {
+		defaults: {
+			
+		}
+	}
+};

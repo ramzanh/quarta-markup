@@ -1,0 +1,21 @@
+mixin button(data)
+  if (data.config)
+    - var configuration = '';
+    each modifier in data.config
+      - var temp = 'button_' + modifier + ' ';
+      - configuration += temp;
+  a.button(href=data.href class=configuration)&attributes(data.attributes)
+    span=data.title
+    if (data.icon)
+      i.material-icons=data.icon
+
+mixin buttonForm(data)
+  if (data.config)
+    - var configuration = '';
+    each modifier in data.config
+      - var temp = 'button_' + modifier + ' ';
+      - configuration += temp;
+  button.button(class=configuration)&attributes(data.attributes)
+    span=data.title
+    if (data.icon)
+      i.material-icons=data.icon

@@ -1,0 +1,7 @@
+mixin figureContact(data)
+	.figure-contact(class= data.colored ? 'figure-contact_colored' : '')
+		.figure-contact__icon
+			+icon(data.icon)
+		.figure-contact__info(class= data.big ? 'figure-contact__info_big' : '')
+			each item in data.content
+				.w-100!=item

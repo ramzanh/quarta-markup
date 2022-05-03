@@ -1,0 +1,39 @@
+// ==========================================================================
+// menu
+// ==========================================================================
+.menu
+    +reset-ul
+    li
+        display: inline-block
+        margin: 0 4px
+        a
+            display: block
+            border: none
+            +small-caps
+            padding: 12px 6px
+            color: $slate
+            &:hover
+                color: $pinkish-tan-dark
+
+.menu-footer
+    +reset-ul
+    li
+        display: block
+        &:not(:last-child)
+            margin-bottom: 10px
+
+.menu-legal
+    +reset-ul
+    li
+        display: inline-block
+        font-size: 12px
+        &:not(:last-child)
+            margin-right: 10px
+
+@media screen and (max-width: 1199.8px)
+    .menu
+        li
+            display: block
+            margin: 4px 0
+            a
+                color: #fff

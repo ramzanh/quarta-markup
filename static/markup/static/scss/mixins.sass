@@ -1,0 +1,19 @@
+@function em($pixels, $context: $em-base)
+    @return #{$pixels/$context}em
+@function rem($size)
+    $remSize: $size / $em-base
+    @return #{$remSize}rem
+@mixin trans1
+    transition: all 0.3s ease-in-out
+@mixin trans2
+    transition: all 0.6s cubic-bezier(0.785, 0.135, 0.150, 0.860)
+@mixin reset-ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+@mixin link-white
+    color: #fff
+    border-color: rgba(255, 255, 255, .4)
+    &:hover
+        color: $pinkish-tan
+        border-color: $pinkish-tan

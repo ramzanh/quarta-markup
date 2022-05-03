@@ -1,0 +1,7 @@
+data = {
+	figureVendor: {
+		defaults: {
+			
+		}
+	}
+};

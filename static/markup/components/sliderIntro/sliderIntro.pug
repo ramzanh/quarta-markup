@@ -1,0 +1,22 @@
+include ../listServices/listServices
+
+mixin sliderIntro(data)
+	.swiper-container.slider-intro.js-slider-intro
+		.swiper-wrapper
+			each item in data.items
+				.swiper-slide.slider-intro__slide.text-center(style='background-image: url(' + item.img + ');')
+					.slider-intro__slide-content
+						.container
+							.row.justify-content-center
+								.col-md-10
+									h1!=item.heading
+									+listServices(item.services)
+							.row.justify-content-center.mt-5
+								.col-md-10
+									+button(item.button)
+					.overlay
+		//
+		.swiper-button-next.slider-intro__nav-button.material-icons.d-none.d-sm-block chevron_right
+		.swiper-button-prev.slider-intro__nav-button.material-icons.d-none.d-sm-block chevron_left
+		//
+		.swiper-pagination

@@ -1,0 +1,9 @@
+include ../figureProduct/figureProduct
+
+mixin sectionProducts(data)
+	section.section.section-products#section-products
+		.container
+			.row
+				each item in data.items
+					.col-xl-4.col-sm-6.col-12.section-products__item
+						+figureProduct(item)

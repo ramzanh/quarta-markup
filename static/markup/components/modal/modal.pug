@@ -1,0 +1,20 @@
+mixin modal(data)
+  .modal(id=data.id tabindex='-1' role='dialog')
+    .modal-dialog.modal-dialog-centered(role='document')
+      .modal-content.text-center
+        .modal-header
+          if (data.heading)
+            h3!=data.heading
+          .modal__close.material-icons(data-dismiss='modal') close
+        .modal-body
+          if (data.body)
+            p
+              each item in data.body
+                !=item
+                br
+          if block
+            block
+        if (data.buttons)
+          .modal-footer
+            each button in data.buttons
+              +button(button)

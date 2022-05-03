@@ -1,0 +1,25 @@
+extends _template.pug
+
+include ../components/sectionMasthead/sectionMasthead
+include ../components/sectionAbout/sectionAbout
+include ../components/sectionCTA/sectionCTA
+
+block pageHeader
+	+header(header.defaults)
+block pageMain
+	main.page-main
+		// section MASTHEAD 
+		+sectionMasthead(sectionMasthead.about)
+		// - section MASTHEAD 
+		// section ABOUT #1 
+		+sectionAbout(sectionAbout.defaults)
+		// - section ABOUT #1 
+		// section CTA 
+		+sectionCTA(sectionCTA.defaults)
+		// - section CTA 
+		// section ABOUT #2 
+		+sectionAbout2(sectionAbout.defaults)
+		// - section ABOUT #2 
+block pageFooter
+	+footer(footer.defaults)
+block pageScripts

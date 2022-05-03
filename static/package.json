@@ -1,0 +1,40 @@
+{
+  "name": "awesome_project",
+  "version": "1.0.0",
+  "description": "Your awesome project description",
+  "main": "gulpfile.js",
+  "directories": {},
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.1.3",
+    "google-maps": "^3.3.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1",
+    "jquery-mask-plugin": "^1.14.15",
+    "lg-autoplay": "^1.0.4",
+    "lg-fullscreen": "^1.0.1",
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.1.0",
+    "lg-thumbnail": "^1.1.0",
+    "lg-video": "^1.2.2",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.11",
+    "popper.js": "^1.14.3",
+    "swiper": "^4.3.5",
+    "ymaps": "^0.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.14",
+    "comment-json": "^1.1.3",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+extends _template.pug
+
+include ../components/sectionMasthead/sectionMasthead
+include ../components/sectionProducts/sectionProducts
+
+block pageHeader
+	+header(header.defaults)
+block pageMain
+	main.page-main
+		// section MASTHEAD 
+		+sectionMasthead(sectionMasthead.equipmentCategory)
+		// - section MASTHEAD 
+		// section PRODUCTS 
+		+sectionProducts(sectionProducts.defaults)
+		// - section PRODUCTS 
+block pageFooter
+	+footer(footer.defaults)
+block pageScripts

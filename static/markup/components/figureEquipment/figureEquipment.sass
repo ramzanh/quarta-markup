@@ -1,0 +1,93 @@
+// ==========================================================================
+// figureEquipment
+// ==========================================================================
+.figure-equipment
+    &.flex-xl-row-reverse
+        .figure-equipment__description
+            margin-left: 0
+            margin-right: auto
+        .figure-equipment__pointer
+            right: 0
+            left: auto
+            border-width: 23px 23px 23px 0
+            border-color: transparent #fff transparent transparent
+.figure-equipment__description
+    display: flex
+    flex-wrap: wrap
+    padding: 50px !important
+    width: 100%
+    max-width: 605px
+    margin-left: auto
+    a
+        color: $pinkish-tan
+        border-color: rgba(216, 160, 114, .5)
+        &:hover
+            color: $pinkish-tan-dark
+            border-color: $pinkish-tan-dark
+.figure-equipment__content
+    align-self: center
+.figure-equipment__counter
+    display: inline-block
+    +small-caps
+    color: $cool-grey
+    align-self: flex-start
+.figure-equipment__line
+    width: 50px
+    height: 2px
+    background-color: $pinkish-tan
+    align-self: flex-end
+.figure-equipment__image
+    position: relative
+    padding: 0
+    border: none
+    img
+        width: 100%
+        height: auto
+.figure-equipment__pointer
+    position: absolute
+    top: 0
+    left: 0
+    right: auto
+    bottom: 0
+    margin: auto
+    width: 23px
+    height: 46px
+    border-style: solid
+    border-width: 23px 0 23px 23px
+    border-color: transparent transparent transparent #fff
+    z-index: 50
+
+@media screen and (max-width: 1199.8px)
+    .figure-equipment
+        text-align: center
+        &.flex-xl-row-reverse
+            .figure-equipment__description
+                margin-left: auto
+                margin-right: auto
+            .figure-equipment__pointer
+                top: 0
+                left: 0
+                right: 0
+                bottom: auto
+                border-width: 23px 23px 0 23px
+                border-color: #fff transparent transparent transparent
+    .figure-equipment__description
+        max-width: 960px
+        margin-left: auto
+        margin-right: auto
+        padding: 30px !important
+    .figure-equipment__counter
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 15px
+    .figure-equipment__line
+        margin-top: 5px
+        margin-left: auto
+        margin-right: auto
+    .figure-equipment__pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: auto
+        border-width: 23px 23px 0 23px
+        border-color: #fff transparent transparent transparent

@@ -1,0 +1,71 @@
+// ==========================================================================
+// header
+// ==========================================================================
+.header
+    background-color: #fff
+.header__wrapper-info
+    background-color: $slate
+    color: #fff
+    font-size: 12px
+    padding: 9px 0
+    width: 100%
+    a
+        +link-white
+.header__info
+    margin-right: 30px
+    &:last-of-type
+        margin-right: 0
+.header__wrapper-menu
+    padding: 18px 0
+    width: 100%
+.header__burger
+    background-color: $dark
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 8px 15px
+    display: none
+    text-align: center
+.burger
+    display: inline-flex
+    flex-direction: column
+    justify-content: space-between
+    width: 20px
+    height: 15px
+    z-index: 1000
+    vertical-align: middle
+    cursor: pointer
+    div
+        width: 100%
+        height: 2px
+        background-color: #fff
+.header-spacer
+    height: 38px
+
+@media screen and (max-width: 1199.8px)
+    .header
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        z-index: 500
+    .header__burger
+        display: block
+    .header__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: $slate
+        color: #fff
+        text-align: center
+        +trans1
+        position: absolute
+        top: 38px
+        left: 0
+        width: 100%
+        height: 0vh
+        overflow: hidden
+        will-change: height
+        &.active
+            height: calc(100vh - 38px)

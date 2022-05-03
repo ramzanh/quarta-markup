@@ -1,0 +1,14 @@
+mixin figureAbout(data)
+	.row.align-items-center.figure-about(class= data.reverse ? 'flex-row-reverse' : '')&attributes(attributes)
+		.col-lg-6.col-12.figure-about__img
+			+imgSet(data.img, 'jpg', '3x')
+		.col-lg-6.col-12.figure-about__content
+			each item in data.text
+				p!=item
+		if (data.big)
+			.figure-about__big=data.big
+		case data.decor
+			when 'line'
+				.figure-about__line
+			when 'square'
+				.figure-about__square

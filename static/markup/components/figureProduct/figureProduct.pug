@@ -1,0 +1,14 @@
+include ../specification/specification
+
+mixin figureProduct(data)
+	.figure-product
+		a.figure-product__image(href=data.href)
+			+imgSet(data.img, 'jpg', '3x')
+		.figure-product__description
+			h5
+				a(href=data.href)=data.title
+		.figure-product__specification
+			+specification(data.specification)
+		.figure-product__buttons
+			+button(sectionProducts.defaults.button)
+			+link(sectionProducts.defaults.link)

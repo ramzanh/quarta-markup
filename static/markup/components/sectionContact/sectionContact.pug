@@ -1,0 +1,14 @@
+//- include ../gmap/gmap
+include ../ymap/ymap
+include ../figureContact/figureContact
+
+mixin sectionContact(data)
+	section.section.section-contact#section-contact
+		.container-fluid
+			.row.no-gutters.align-items-center
+				.col-lg-6.section-contact__map
+					+ymap(ymap.defaults)
+				.col-lg-6.section-contact__info
+					h3=data.heading
+					each item in data.items
+						+figureContact(item)

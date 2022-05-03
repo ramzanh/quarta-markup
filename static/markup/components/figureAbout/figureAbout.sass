@@ -1,0 +1,58 @@
+// ==========================================================================
+// figureAbout
+// ==========================================================================
+.figure-about
+    position: relative
+    .figure-about__big
+        left: auto
+        right: 310px
+        bottom: -90px
+    &.no-gutters
+        .figure-about__content
+            padding: 50px
+.figure-about__big
+    position: absolute
+    bottom: -100px
+    left: -140px
+    font-size: 240px
+    line-height: 1
+    font-weight: bold
+    color: $cool-grey
+    text-transform: uppercase
+    z-index: -1
+    opacity: .08
+.figure-about__img
+    img
+        width: 100%
+        height: auto
+.figure-about__content
+    max-width: 535px
+.figure-about__line
+    position: absolute
+    top: 52px
+    right: 0
+    width: 50px
+    height: 2px
+    background-color: $pinkish-tan
+    z-index: -1
+.figure-about__square
+    position: absolute
+    top: -44px
+    left: 0
+    width: 88px
+    height: 88px
+    border: 2px solid $pinkish-tan
+    z-index: -1
+
+@media screen and (max-width: 991.8px)
+    .figure-about
+        text-align: center
+        &.no-gutters
+            .figure-about__content
+                padding: 15px
+    .figure-about__big, .figure-about__line, .figure-about__square
+        display: none
+    .figure-about__content
+        margin-top: 0
+        max-width: 100%
+        padding: 15px

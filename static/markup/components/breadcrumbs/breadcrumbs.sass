@@ -1,0 +1,20 @@
+// ==========================================================================
+// breadcrumbs
+// ==========================================================================
+.breadcrumbs
+    +reset-ul
+    li
+        display: inline-block
+        &:not(:last-child)
+            &:after
+                display: inline-block
+                content: 'chevron_right'
+                font-family: 'Material Icons'
+                font-size: 16px
+                color: #fff
+                vertical-align: middle
+        a
+            border: none
+            color: $pinkish-tan
+            &:hover
+                color: $pinkish-tan-dark

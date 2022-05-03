@@ -1,0 +1,7 @@
+data = {
+	moduleName: {
+		defaults: {
+			
+		}
+	}
+};

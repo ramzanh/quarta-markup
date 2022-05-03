@@ -1,0 +1,7 @@
+mixin itemCategory(data)
+	a.item-category(href=data.href)
+		.item-category__img
+			+imgSet(data.img, 'jpg', '3x')
+		.item-category__content
+			strong=data.title
+		.overlay.overlay_gradient

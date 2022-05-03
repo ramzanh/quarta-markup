@@ -1,0 +1,36 @@
+include ../specification/specification
+
+mixin sectionProduct(data)
+	section.section.section-product#section-product
+		.container
+			.row
+				.col-lg-6.section-product__col
+					.swiper-container.section-product__slider-images.js-slider-product-images
+						.swiper-wrapper
+							each item in data.gallery
+								.swiper-slide
+									.js-slider-product-images__item.section-product__item(data-src=item.video ? item.src : item.src + '@3x.jpg')&attributes(item.attributes)
+										if (!item.video)
+											+imgSet(item.src, 'jpg', '3x')
+											i.section-product__icon-zoom.material-icons search
+											.overlay
+										else
+											iframe.yt-video.section-product__video(src=item.video frameborder='0', allowfullscreen)
+					.swiper-container.section-product__slider-thumbnails.js-slider-product-thumbnails
+						.swiper-wrapper
+							each item in data.gallery
+								.swiper-slide
+									if (item.video)
+										.overlay
+										i.material-icons.md-48.section-product__icon-video play_circle_outline
+									+imgSet(item.thumbnail, 'jpg', '3x')
+				.col-lg-6.section-product__col
+					.section-product__description
+						h3=data.title
+						each paragraph in data.description
+							p!=paragraph
+					.section-product__specification
+						+specification(data.specification)
+					.section-product__buttons
+						+button(data.button)
+						+link(data.link)

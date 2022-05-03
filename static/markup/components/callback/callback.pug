@@ -1,0 +1,6 @@
+mixin callback(data)
+    .callback&attributes(attributes)
+        .callback__phone=data.phone
+        if (data.link)
+            a.callback__link(href=data.link.href)&attributes(data.link.attributes)
+                =data.link.title

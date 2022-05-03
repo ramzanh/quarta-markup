@@ -1,0 +1,10 @@
+mixin section(data)
+	.section
+
+mixin sectionHeader(data)
+	header.section__header
+		if (data.heading)
+			h2=data.heading
+			.line-header
+		if (data.subheading)
+			p=data.subheading

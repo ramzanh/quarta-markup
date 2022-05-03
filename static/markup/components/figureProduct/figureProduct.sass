@@ -1,0 +1,50 @@
+// ==========================================================================
+// figureProduct
+// ==========================================================================
+.figure-product
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: flex-start
+    flex-grow: 1
+    height: 100%
+.figure-product__image
+    display: inline-block
+    border: none
+    align-self: flex-start
+    width: 100%
+    img
+        width: 100%
+        height: auto
+        border-top-left-radius: 2px
+        border-top-right-radius: 2px
+.figure-product__description
+    margin-top: 20px
+    width: 100%
+    h5
+        margin-top: 0
+        margin-bottom: 0
+    a
+        color: $pinkish-tan
+        border-color: rgba(216, 160, 114, .5)
+        &:hover
+            color: $pinkish-tan-dark
+            border-color: $pinkish-tan-dark
+.figure-product__specification
+    margin-top: 5px
+    width: 100%
+    margin-bottom: auto
+.figure-product__buttons
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-top: 15px
+    width: 100%
+
+@media screen and (max-width: 767.8px)
+    .figure-product__buttons
+        flex-direction: column
+        .button
+            margin-bottom: 15px
+            width: 100%

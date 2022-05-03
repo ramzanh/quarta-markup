@@ -1,0 +1,7 @@
+mixin advantage(data)
+	.advantage
+		.advantage__icon
+			+imgSet(data.icon, 'png', '3x')
+		.advantage__content
+			h4=data.heading
+			p=data.description

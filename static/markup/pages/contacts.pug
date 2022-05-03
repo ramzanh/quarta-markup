@@ -1,0 +1,18 @@
+extends _template.pug
+
+include ../components/sectionMasthead/sectionMasthead
+include ../components/sectionContact/sectionContact
+
+block pageHeader
+	+header(header.defaults)
+block pageMain
+	main.page-main
+		// section MASTHEAD 
+		+sectionMasthead(sectionMasthead.contacts)
+		// - section MASTHEAD 
+		// section CONTACT 
+		+sectionContact(sectionContact.defaults)
+		// - section CONTACT 
+block pageFooter
+	+footer(footer.defaults)
+block pageScripts

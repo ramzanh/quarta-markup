@@ -1,0 +1,34 @@
+// ==========================================================================
+// figureContact
+// ==========================================================================
+.figure-contact
+    display: flex
+    align-items: center
+    border: 1px solid $borders
+    border-radius: 2px
+    margin: 15px 0
+    width: 100%
+    padding: 20px 20px
+    fill: $slate
+    color: $slate
+.figure-contact_colored
+    fill: $pinkish-tan
+.figure-contact__icon
+    display: inline-flex
+    align-items: center
+    width: 48px
+    svg
+        width: 100%
+        height: auto
+.figure-contact__info
+    padding-left: 20px
+.figure-contact__info_big
+    font-size: 24px
+
+@media screen and (max-width: 575.8px)
+    .figure-contact
+        flex-direction: column
+        text-align: center
+    .figure-contact__info
+        padding-left: 0
+        margin-top: 15px

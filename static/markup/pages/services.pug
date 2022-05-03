@@ -1,0 +1,18 @@
+extends _template.pug
+
+include ../components/sectionMasthead/sectionMasthead
+include ../components/sectionServices/sectionServices
+
+block pageHeader
+	+header(header.defaults)
+block pageMain
+	main.page-main
+		// section MASTHEAD 
+		+sectionMasthead(sectionMasthead.services)
+		// - section MASTHEAD 
+		// section SERVICES 
+		+sectionServices(sectionServices.defaults)
+		// - section SERVICES 
+block pageFooter
+	+footer(footer.defaults)
+block pageScripts

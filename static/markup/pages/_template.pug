@@ -1,0 +1,28 @@
+include _includes
+doctype html
+html(class="no-js", lang="en")
+	head
+		+head(head.defaults)
+	body
+		// PAGE HEADER 
+		block pageHeader
+		// - PAGE HEADER 
+		// PAGE MAIN 
+		block pageMain
+		// - PAGE MAIN 
+		// PAGE FOOTER 
+		block pageFooter
+		// - PAGE FOOTER 
+		// COMMON SCRIPTS 
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
+		script(src='%=static=%js/main%=hash=%%=min=%.js')
+		// - COMMON SCRIPTS 
+		// PAGE SCRIPTS 
+		block pageScripts
+		// - PAGE SCRIPTS 
+		// PAGE MODALS 
+		block pageModals
+			+modal(modal.callback)
+				+formCallback
+		// - PAGE MODALS 

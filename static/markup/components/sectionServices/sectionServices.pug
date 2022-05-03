@@ -1,0 +1,13 @@
+include ../figureService/figureService
+
+mixin sectionServices(data)
+	section.section.section-services#section-services
+		.container
+			.row
+				each item in data.items
+					.col-md-4.section-services__item
+						+figureService(item)
+			.row
+				.col-lg-6.col-12.mt-xl-5.mt-3
+					each paragraph in data.text
+						p=paragraph

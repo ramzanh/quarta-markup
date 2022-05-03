@@ -6,12 +6,31 @@
     --slate: #484760
     --pinkish-tan: #7294d8
     --pinkish-tan-dark: #5d7bb0
+    --pinkish-tan-border: rgba(216, 160, 114, .5)
     --greyish-brown: #4a4a4a
     --cool-grey: #90909a
     --dark: #1f1f2d
     --dark-two: #17171c
     --borders: #eee
     --pale-grey: #ebf0f6
+    --white-link: #fff
+    --menu-link: #fff
+    --white-link-border: rgba(255, 255, 255, .4)
+    --breadcrumbs-arrow: #fff
+    --button-text: #fff
+    --equipment-pointer: #fff
+    --pagination-bullet: #fff
+    --intro-slide: #fff
+    --intro-nav: #fff
+    --product-zoom-icon: #fff
+    --dark-section-text: #fff
+    --modal-close-icon: #fff
+    --item-category: #fff
+    --header-background: #fff
+    --header-wrapper-text: #fff
+    --header-burger: #fff
+    --header-inner-text: #fff
+    --footer-callback-phone: #fff
 html
 	font-size: $em-base
 	-webkit-font-smoothing: antialiased
@@ -32,7 +51,7 @@ img
 a
 	+trans1
 	color: $pinkish-tan
-	border-bottom: 1px solid rgba(216, 160, 114, .5)
+	border-bottom: 1px solid $pinkish-tan-border
 	&:hover, &:focus
 		text-decoration: none
 	&:hover
@@ -64,7 +83,7 @@ a
 	margin-top: 8px
 	margin-bottom: 10px
 .dotted
-	border-bottom: 1px dotted rgba(216, 160, 114, .5)
+	border-bottom: 1px dotted $pinkish-tan-border
 
 @media (min-width: 1200px)
 	.container

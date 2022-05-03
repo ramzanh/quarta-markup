@@ -10,7 +10,7 @@
             right: 0
             left: auto
             border-width: 23px 23px 23px 0
-            border-color: transparent #fff transparent transparent
+            border-color: transparent $equipment-pointer transparent transparent
 .figure-equipment__description
     display: flex
     flex-wrap: wrap
@@ -20,7 +20,7 @@
     margin-left: auto
     a
         color: $pinkish-tan
-        border-color: rgba(216, 160, 114, .5)
+        border-color: $pinkish-tan-border
         &:hover
             color: $pinkish-tan-dark
             border-color: $pinkish-tan-dark
@@ -54,7 +54,7 @@
     height: 46px
     border-style: solid
     border-width: 23px 0 23px 23px
-    border-color: transparent transparent transparent #fff
+    border-color: transparent transparent transparent $equipment-pointer
     z-index: 50
 
 @media screen and (max-width: 1199.8px)
@@ -70,7 +70,7 @@
                 right: 0
                 bottom: auto
                 border-width: 23px 23px 0 23px
-                border-color: #fff transparent transparent transparent
+                border-color: $equipment-pointer transparent transparent transparent
     .figure-equipment__description
         max-width: 960px
         margin-left: auto
@@ -90,4 +90,4 @@
         right: 0
         bottom: auto
         border-width: 23px 23px 0 23px
-        border-color: #fff transparent transparent transparent
+        border-color: $equipment-pointer transparent transparent transparent

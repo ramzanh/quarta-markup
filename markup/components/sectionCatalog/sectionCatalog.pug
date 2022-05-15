@@ -2,10 +2,10 @@ include ../itemCategory/itemCategory
 
 mixin sectionCatalog(data)
 	section.section.section_pt.section-catalog#section-catalog
-		.container
-			.row.justify-content-center.text-center
-				.col-lg-6.col-md-10
-					+sectionHeader(data.header)
+		//.container
+		//	.row.justify-content-center.text-center
+		//		.col-lg-6.col-md-10
+		//			+sectionHeader(data.header)
 		.container-fluid
 			.row.no-gutters
 				each item in data.items

@@ -1,0 +1,33 @@
+.section-catalog {
+    .catalog-categories {
+        padding: 0 16px;
+    }
+
+    .catalog-category {
+        margin: 4px;
+    }
+
+    .item-category__img img {
+        border-radius: 8px;
+    }
+
+    .item-category__content {
+        left: 6.25%;
+        top: 8.3333334%;
+        right: auto;
+        bottom: auto;
+        color: #0057FF;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 1.2;
+
+        @media (min-width: 992px) {
+            font-size: 1.15vw;
+            font-size: clamp(14px, 1.15vw, 22px);
+        }
+
+        @media (max-width: 991px) {
+            font-size: 16px;
+        }
+    }
+}

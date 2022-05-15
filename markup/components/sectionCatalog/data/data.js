@@ -7,44 +7,34 @@ data = {
 			},
 			items: {
 				0: {
-					title: 'Кузнечно-прессовое оборудование',
+					title: 'Лазеры',
 					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-1',
+					img: '%=static=%img/assets/sectionCatalog/item0',
+					hoverImg: '%=static=%img/assets/sectionCatalog/item0',
 				},
 				1: {
-					title: 'Установки гидрообразивной резки',
+					title: 'Листогиб',
 					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-2',
+					img: '%=static=%img/assets/sectionCatalog/item1',
+					hoverImg: '%=static=%img/assets/sectionCatalog/item1',
 				},
 				2: {
-					title: 'Термическое оборудование',
+					title: 'Трубогиб',
 					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-3',
+					img: '%=static=%img/assets/sectionCatalog/item2',
+					hoverImg: '%=static=%img/assets/sectionCatalog/item2',
 				},
 				3: {
-					title: 'Автоклавы',
+					title: 'Вальцы',
 					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-4',
+					img: '%=static=%img/assets/sectionCatalog/item4',
+					hoverImg: '%=static=%img/assets/sectionCatalog/item4',
 				},
 				4: {
-					title: 'Измерительные машины',
+					title: 'Комплектующие',
 					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-5',
-				},
-				5: {
-					title: 'Заточное оборудование',
-					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-6',
-				},
-				6: {
-					title: 'Металлорежущий инструмент',
-					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-7',
-				},
-				7: {
-					title: 'Оснастка для станков',
-					href: 'equipment-category.html',
-					img: '%=static=%img/assets/sectionCatalog/item-8',
+					img: '%=static=%img/assets/sectionCatalog/item3',
+					hoverImg: '%=static=%img/assets/sectionCatalog/item3',
 				},
 			}
 		}

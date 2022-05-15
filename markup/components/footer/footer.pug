@@ -11,15 +11,15 @@ mixin footer(data)
                         +logo(data.columns[0].logo)
                         .mt-5
                             +menuFooter(data.columns[1].menu)
-                        .mt-5
-                            p.pt-3.mb-0
-                                !=data.columns[0].description
-                    .col-lg-auto.col-md-6.text-right
-                        +callback(data.columns[3].callback)(class="text-right")
+                    .col-lg-auto.col-md-6.text-left.text-md-right.my-5.my-md-0
+                        +callback(data.columns[3].callback)(class="text-left.text-md-right")
                         .mt-5
                             +info(data.columns[2].mail)(class="d-block mt-2")
                         .mt-5
                             +info(data.columns[2].address)(class="info_multiline d-block mb-3")
+                .mt-4
+                    p.mb-0
+                        !=data.columns[0].description
         //.footer__copyright
         //	.container
         //		.row.justify-content-between

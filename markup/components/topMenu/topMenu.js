@@ -1,11 +1,3 @@
 // ==========================================================================
-// callback
+// info
 // ==========================================================================
-.callback
-.callback__phone
-    display: block
-    font-size: 24px
-    line-height: 30px
-    color: $kg-black
-.callback__link
-    +link-main

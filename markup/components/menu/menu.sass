@@ -4,16 +4,22 @@
 .menu
     +reset-ul
     li
-        display: inline-block
+        display: inline-flex
+        align-items: center
         margin: 0 4px
+        padding: 12px 6px
         a
             display: block
             border: none
-            +small-caps
-            padding: 12px 6px
-            color: $slate
-            &:hover
-                color: $pinkish-tan-dark
+            text-transform: uppercase
+            margin-left: 12px
+            color: $kg-black
+            font-size: 14px
+            line-height: 1.25
+            font-weight: 600
+            +hover-underline
+            &:active
+                color: $kg-blue
 
 .menu-footer
     +reset-ul

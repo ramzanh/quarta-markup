@@ -32,6 +32,13 @@
     --header-inner-text: #fff
     --footer-callback-phone: #fff
     --footer-heading: #fff
+
+    --kg-black: #090B0F
+    --kg-dark-grey: #2E3A51
+    --kg-light-grey: #C7CFDD
+    --kg-light-grey-rgb: 199,207,221
+    --kg-blue: #0057FF
+    --kg-blue-rgb: 0,87,255
 html
 	font-size: $em-base
 	-webkit-font-smoothing: antialiased
@@ -40,28 +47,17 @@ body
 	position: relative
 	width: 100%
 	min-width: 320px
-	color: $greyish-brown
+	color: $kg-black
 	font-feature-settings: 'liga'
 	font-family: $font-primary
 	font-size: 100%
-	line-height: 1.6
+	line-height: 1.25
 	overflow-x: hidden
 img
 	max-width: 100%
 	height: auto
 a
-	+trans1
-	color: $pinkish-tan
-	border-bottom: 1px solid $pinkish-tan-border
-	&:hover, &:focus
-		text-decoration: none
-	&:hover
-		color: $pinkish-tan-dark
-		border-color: $pinkish-tan-dark
-	&:focus
-		color: inherit
-		outline: none
-.page-main
+	+link-main
 
 .overlay
 	display: block

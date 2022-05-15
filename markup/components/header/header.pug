@@ -1,32 +1,35 @@
 include ../info/info
 include ../logo/logo
 include ../menu/menu
+include ../topMenu/topMenu
 include ../callback/callback
 
 mixin header(data)
-	.header-spacer.d-xl-none
-	header.header
-		.header__burger
-			.burger.js-burger
-				div
-				div
-				div
-		.header__inner.js-mobile-menu
-			.header__wrapper-info
-				.container
-					.row.align-items-center.flex-column.flex-xl-row
-						.col-12.d-xl-none.mb-3
-							+logo(data.logo)
-						each item, index in data.info
-							.col-12.col-xl-auto(class= (index == 2 ? 'ml-xl-auto' : ''))
-								.header__info
-									+info(item)
-			nav.header__wrapper-menu
-				.container
-					.row.align-items-center.flex-column.flex-xl-row
-						.col-auto.d-none.d-xl-block
-							+logo(data.logo)
-						.col-auto
-							+menu(data.menu)
-						.col-auto.ml-xl-auto.mt-3.mt-xl-0
-							+callback(data.callback)(class="text-right")
+    .header-spacer.d-xl-none
+    header.header
+        .header__burger
+            .burger.js-burger
+                div
+                div
+                div
+        .header__inner.js-mobile-menu
+            .header__wrapper-info
+                .container
+                    .row.align-items-center.flex-column.flex-xl-row
+                        .col-12.d-xl-none.mb-3
+                            +logo(data.logo)
+                        .col-12.col-xl-auto
+                            +topMenu(data.topMenu)
+                        each item, index in data.info
+                            .col-12.col-xl-auto.ml-auto(class= (index == 2 ? 'ml-xl-auto' : ''))
+                                .header__info
+                                    +info(item)
+            nav.header__wrapper-menu
+                .container
+                    .row.align-items-center.flex-column.flex-xl-row
+                        .col-auto.d-none.d-xl-block
+                            +logo(data.logo)
+                        .col-auto
+                            +menu(data.menu)
+                        .col-auto.ml-xl-auto.mt-3.mt-xl-0
+                            +callback(data.callback)(class="text-right")

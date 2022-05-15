@@ -1,47 +1,48 @@
 data = {
 	header: {
 		defaults: {
+            topMenu: {
+                0: {
+                    title: 'О компании',
+                    href: 'about.html'
+                },
+                1: {
+                    title: 'Карьера',
+                    href: 'career.html'
+                },
+                2: {
+                    title: 'Контакты',
+                    href: 'contacts.html'
+                }
+            },
 			info: {
 				0: {
 					icon: 'place',
-					text: 'г. Москва, Дербеневская набережная, дом 7, стр. 23'
-				},
-				1: {
-					icon: 'access_time',
-					text: 'Пн – Сб 09:00 – 18:00, Вс – выходной'
-				},
-				2: {
-					icon: 'mail_outline',
-					text: '<a href="mailto:stanok@magistral.tech">stanok@magistral.tech</a>'
+					text: 'Москва, ул. Верейская, 17 БЦ «Верейская Плаза 2» оф. 118А'
 				}
 			},
-			logo: '%=static=%img/content/logo.svg',
+			logo: '%=static=%img/content/kg/logo.svg',
 			menu: {
 				0: {
-					title: 'Оборудование',
-					href: 'equipment.html'
+					title: 'ОБОРУДОВАНИЕ',
+					href: 'equipment.html',
+                    logo: '%=static=%img/content/kg/equipment.svg',
 				},
 				1: {
-					title: 'Наши производители',
-					href: 'vendors.html'
+					title: 'ЛИЗИНГ',
+					href: 'vendors.html',
+                    logo: '%=static=%img/content/kg/leasing.svg',
 				},
 				2: {
-					title: 'Услуги',
-					href: 'services.html'
-				},
-				3: {
-					title: 'О компании',
-					href: 'about.html'
-				},
-				4: {
-					title: 'Контакты',
-					href: 'contacts.html'
+					title: 'СЕРВИС',
+					href: 'services.html',
+                    logo: '%=static=%img/content/kg/service.svg',
 				},
 			},
 			callback: {
-				phone: '+ 7 (495) 150 08 47',
+				phone: '+7 (495) 215 24 25',
 				link: {
-					title: 'Заказать обратный звонок',
+					title: 'Обратный звонок',
 					href: '#modalCallback',
 					attributes: {
 						'data-toggle': 'modal'

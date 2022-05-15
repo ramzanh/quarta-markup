@@ -1,0 +1,5 @@
+mixin topMenu(data)
+    .top-menu&attributes(attributes)
+        each item, index in data
+            a.top-menu__link(href=item.href)
+                !=item.title

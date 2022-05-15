@@ -1,17 +1,18 @@
 mixin menu(data)
-	ul.menu
-		each item in data
-			li
-				a(href=item.href)=item.title
+    ul.menu
+        each item in data
+            li
+                img(src=item.logo)
+                a(href=item.href)=item.title
 
 mixin menuFooter(data)
-	ul.menu-footer
-		each item in data
-			li
-				a(href=item.href)=item.title
+    ul.menu-footer
+        each item in data
+            li
+                a(href=item.href)=item.title
 
 mixin menuLegal(data)
-	ul.menu-legal
-		each item in data
-			li
-				a(href=item.href)=item.title
+    ul.menu-legal
+        each item in data
+            li
+                a(href=item.href)=item.title

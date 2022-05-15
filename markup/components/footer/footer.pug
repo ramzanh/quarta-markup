@@ -3,29 +3,27 @@ include ../menu/menu
 include ../callback/callback
 
 mixin footer(data)
-	footer.footer
-		.footer__content
-			.container
-				.row.justify-content-between
-					.col-lg-3.col-md-6
-						+logo(data.columns[0].logo)
-						.mt-4
-							p=data.columns[0].description
-					nav.col-lg-auto.col-md-6.footer__col-pt
-						.footer__heading=data.columns[1].heading
-						+menuFooter(data.columns[1].menu)
-					.col-lg-auto.col-md-6.footer__col-pt
-						.footer__heading=data.columns[2].heading
-						+info(data.columns[2].address)(class="info_multiline d-block mb-3")
-						+info(data.columns[2].clocks)(class="info_multiline d-block mb-3")
-					.col-lg-auto.col-md-6.footer__col-pt
-						.footer__heading=data.columns[3].heading
-						+callback(data.columns[3].callback)(class="text-left")
-						+info(data.columns[2].mail)(class="d-block mt-2")
-		.footer__copyright
-			.container
-				.row.justify-content-between
-					.col-sm-auto.col-12
-						small=data.copyright.text
-					.col-sm-auto.col-12
-						+menuLegal(data.copyright.links)
+    footer.footer
+        .footer__content
+            .container
+                .row.justify-content-between
+                    .col-lg-3.col-md-6
+                        +logo(data.columns[0].logo)
+                        .mt-5
+                            +menuFooter(data.columns[1].menu)
+                        .mt-5
+                            p.pt-3.mb-0
+                                !=data.columns[0].description
+                    .col-lg-auto.col-md-6.text-right
+                        +callback(data.columns[3].callback)(class="text-right")
+                        .mt-5
+                            +info(data.columns[2].mail)(class="d-block mt-2")
+                        .mt-5
+                            +info(data.columns[2].address)(class="info_multiline d-block mb-3")
+        //.footer__copyright
+        //	.container
+        //		.row.justify-content-between
+        //			.col-sm-auto.col-12
+        //				small=data.copyright.text
+        //			.col-sm-auto.col-12
+        //				+menuLegal(data.copyright.links)

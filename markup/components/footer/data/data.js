@@ -4,42 +4,30 @@ data = {
 			columns: {
 				0: {
 					logo: '%=static=%img/content/kg/logo-square.svg',
-					description: '«Магистраль Технологии» – перспективная, быстроразвивающаяся компания, которая с 2011 года работает на российском рынке поставки промышленного металлообрабатывающего оборудования.'
+					description: '© 2022. Все права защищены'
 				},
 				1: {
 					heading: 'Меню',
 					menu: {
-						0: {
-							title: 'Главная',
-							href: 'index.html'
-						},
-						1: {
-							title: 'Оборудование',
-							href: 'equipment.html'
-						},
-						2: {
-							title: 'Наши производители',
-							href: 'vendors.html'
-						},
-						3: {
-							title: 'Услуги',
-							href: 'services.html'
-						},
-						4: {
-							title: 'О компании',
-							href: 'about.html'
-						},
-						5: {
-							title: 'Контакты',
-							href: 'contacts.html'
-						},
+                        0: {
+                            title: 'О компании',
+                            href: 'about.html'
+                        },
+                        1: {
+                            title: 'Карьера',
+                            href: 'career.html'
+                        },
+                        2: {
+                            title: 'Контакты',
+                            href: 'contacts.html'
+                        }
 					}
 				},
 				2: {
 					heading: 'Информация',
 					address: {
-						icon: 'place',
-						text: 'г. Москва,<br>Дербеневская набережная, дом 7, стр. 23'
+						icon: null,
+						text: 'Москва, ул. Верейская, 17<br>БЦ «Верейская Плаза 2» оф. 118А'
 					},
 					clocks: {
 						icon: 'access_time',
@@ -47,15 +35,15 @@ data = {
 					},
 					mail: {
 						icon: 'mail_outline',
-						text: '<a href="mailto:stanok@magistral.tech">stanok@magistral.tech</a>'
+						text: '<a href="mailto:info@quartagroup.ru">info@quartagroup.ru</a>'
 					}
 				},
 				3: {
 					heading: 'Контакты',
 					callback: {
-						phone: '+ 7 (495) 150 08 47',
+						phone: '+7 (495) 215 24 25',
 						link: {
-							title: 'Заказать обратный звонок',
+							title: 'Обратный звонок',
 							href: '#modalCallback',
 							attributes: {
 								'data-toggle': 'modal'
